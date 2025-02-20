@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#BOOK2_여름</title>
+    <style>
+        /* 전체 페이지 스타일 */
+        body {
+            font-family: "Noto Sans KR", sans-serif;
+            background-color: #F5F5F5; /* MUJI 스타일 아이보리 배경 */
+            color: #3E3E3E; /* 차분한 다크 그레이 텍스트 */
+            padding: 50px 20px;
+            line-height: 1.8;
+        }
+
+        /* 페이지 제목 */
+        h1 {
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        /* 독서 저널 컨테이너 */
+        .journal-container {
+            max-width: 800px; /* 페이지 너비 제한 */
+            margin: 0 auto; /* 가운데 정렬 */
+            display: flex;
+            flex-direction: column;
+            gap: 40px; /* 섹션 간격 */
+        }
+
+        /* 각 섹션 공통 스타일 */
+        .journal-section {
+            background-color: #FFFFFF; /* 섹션 배경 흰색 */
+            border: 2px solid #3E3E3E; /* 외곽선 */
+            border-radius: 8px; /* 모서리 둥글게 */
+            padding: 30px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 */
+        }
+
+        .journal-section h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        /* 입력 필드 */
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #FAFAFA;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical; /* 감상평 입력창 높이 조절 가능 */
+            height: 150px;
+        }
+
+        /* 이미지 스타일 */
+        .ai-image {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            border-radius: 8px;
+            border: 1px solid #3E3E3E;
+        }
+
+        /* 감정 평가 스타일 */
+        .ai-evaluation {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* 저장 버튼 스타일 */
+        .submit-btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            padding: 12px 20px;
+            font-size: 18px;
+            margin: 40px auto 0;
+            text-align: center;
+            color: #3E3E3E;
+            background-color: #FFFFFF;
+            border: 2px solid #3E3E3E;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📚 #BOOK2_여름</h1>
+
+    <div class="journal-container">
+
+        <!-- 작가 -->
+        <div class="journal-section">
+            <h2>작가</h2>
+            <input type="text" placeholder="이디스 워튼">
+        </div>
+
+        <!-- 출판일 -->
+        <div class="journal-section">
+            <h2>출판일</h2>
+            <input type="text" placeholder="1917">
+        </div>
+
+        <!-- 감상평 -->
+        <div class="journal-section">
+            <h2>감상평</h2>
+            <textarea placeholder="여름을 읽으며, 제목이 단순한 계절의 상징을 넘어 인물의 내면적인 갈등과 감정의 고조를 표현한다는 점이 인상 깊었다. 캐서린의 감정이 여름의 뜨거움처럼 격렬하게 일렁이고, 그 과정에서 느껴지는 고독과 욕망은 매우 사실적으로 다가왔다. 특히, 여름이 지나면 변화가 온다는 점이 마음에 남아, 일시적인 감정들이 결국 지나가며 성장과 변화를 가져오는 과정을 자연스럽게 떠올리게 했다."></textarea>
+        </div>
+
+        <!-- AI 그림 -->
+        <div class="journal-section">
+            <h2>AI가 생성한 감상평 이미지</h2>
+              <img src="1917년 유럽 들판.png" alt=여름">
+        </div>
+
+        <!-- AI 감정 평가 -->
+        <div class="journal-section">
+            <h2>AI 감정 평가</h2>
+            <p class="ai-evaluation">이 감상평은 매우 감성적이고 깊이 있는 반영을 담고 있습니다. 작품의 핵심 테마인 인물의 내면적 갈등과 여름이라는 계절의 상징성을 잘 연결하고, 주인공 캐서린의 감정선이 어떻게 전개되는지를 잘 풀어내었어요. 여름이라는 계절이 지나면 변화가 온다는 점을 통해 감정의 일시성과 성장에 대한 통찰을 제시한 부분도 매우 인상적입니다. 전반적으로 감상평이 진지하고 성숙한 느낌을 주며, 작품을 깊이 이해하고 있다는 인상을 줍니다.</p>
+        </div>
+
+        <!-- 저장 버튼 -->
+        <button class="submit-btn">저장하기</button>
+
+    </div>
+
+</body>
+
+</html>
